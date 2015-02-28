@@ -65,7 +65,7 @@ public class CourseItem extends ScheduleItem implements Parcelable {
         else startDate = null;
         long tempEnd = in.readLong();
         if (tempEnd != -1L) endDate = new Date(tempEnd);
-        else endDate = null; 
+        else endDate = null;
         this.daysOfWeek = new boolean[7];
         in.readBooleanArray(daysOfWeek);
         startHours = in.readInt();
